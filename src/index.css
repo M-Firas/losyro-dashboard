@@ -7,6 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*Gilroy Font*/
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(./fonts/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Hess-Gothic-Round';
+  src: local('Hess-Gothic-Round'), url(./fonts/Hess-Gothic-Round-NF-W01-Rg.ttf) format('truetype');
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
