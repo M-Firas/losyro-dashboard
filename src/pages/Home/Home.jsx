@@ -1,6 +1,9 @@
 import "./Home.css";
 //assets
 
+//components
+import CurrentSetter from "../../components/CurrentSetter/CurrentSetter";
+
 
 const Home = () => {
   
@@ -27,9 +30,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="home--top-right">
-      
-        </div>
+       <CurrentSetter />
       </div>
 
       <div className="home--bottom">
