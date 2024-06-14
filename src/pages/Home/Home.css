@@ -1,0 +1,96 @@
+.home--conatiner{
+    color: #fffffF;
+}
+
+/* Component's Header Styling */
+.component--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+ .component--header .header--left,.header--right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.component--header .header--left{
+    gap: 7px;
+}
+ .component--header .header--left > p { 
+    font-size:20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+ .component--header .header--left > span {
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(103.18deg, #00fefc -41.67%, #0002fe 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.component--header .header--right > p {
+    color: rgba(35, 193, 255, 1);
+    font-size: 12px;
+    font-weight: 500;
+}
+/* Component's Header Styling */
+
+
+
+/* Home Page Top Section */
+.home--top{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+.home--top-left{
+    min-height: 310px;
+    width: calc(60% - 27px);
+    padding: 20px 27px 20px 27px;
+    border: 1px solid rgba(35, 193, 255, 1);
+    border-radius: 16px;
+}
+
+.home--top-right{
+    min-height: 310px;
+    width: calc(33% - 27px);
+    padding: 20px 27px 20px 27px;
+    border: 1px solid rgba(35, 193, 255, 1);
+    background: linear-gradient(180deg, rgba(46, 167, 255, 0) 57.41%, rgba(46, 167, 255, 0.1) 100%);
+    border-radius: 16px;
+}
+/* Home Page Top Section */
+
+/* Home Page Bottom Section */
+.home--bottom{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    margin-top: 15px;
+}
+
+.home--bottom-left{
+    width: calc(50% - 27px);
+    padding: 20px 27px 20px 27px;
+    border: 1px solid rgba(35, 193, 255, 1);
+    background: linear-gradient(180deg, rgba(46, 167, 255, 0) 57.41%, rgba(46, 167, 255, 0.1) 100%);
+    border-radius: 16px;
+    height: 260px;
+}
+.home--bottom-right{
+    border: 1px solid rgba(35, 193, 255, 1);
+    background: linear-gradient(180deg, rgba(46, 167, 255, 0) 57.41%, rgba(46, 167, 255, 0.1) 100%);
+    width: calc(43% - 27px);
+    padding: 20px 27px 20px 27px;
+    border-radius: 16px;
+    min-height: 310px;
+}
+
+/* Home Page Bottom Section */
+
+
+
+
+
+

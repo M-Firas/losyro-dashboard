@@ -1,0 +1,83 @@
+.login--page{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: #000000;
+    min-height: 100vh;
+}
+.login--left {
+    width: 40%;
+}
+.login--left img{
+    width: 100%;
+    height: 100vh;
+} 
+
+.login--right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hess-Gothic-Round", sans-serif;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: 26px;
+  }
+.title img {
+    margin-right: 12px;
+}
+
+
+.verificationCode--container{
+    font-family: "Gilroy-Medium", sans-serif;
+}
+.verificationCode--container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.verificationCode--container form h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.verificationCode--container form p{
+    color: #d9d9d9;
+    font-family: "Gilroy-Light", sans-serif;
+    width: 370px;
+    font-size: 18px;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+.otp--inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.otp--inputs input{
+    width: 70px;
+    height: 70px;
+    margin: 0px 10px 30px 10px;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid #01B9FD;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "Gilroy-Light", sans-serif;
+}
+.verificationCode--container form .resend{
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #01B9FD;
+}
