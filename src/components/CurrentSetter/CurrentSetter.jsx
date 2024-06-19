@@ -1,6 +1,9 @@
 import './CurrentSetter.css'
 
 const CurrentSetter = () => {
+
+    const goals = [ {label:'Goal 1'}, {label:'Goal 2'}, {label:'Goal 3'}, {label:'Goal 4'} ]
+
   return (
     <div className='currentSetter-container'>
 
