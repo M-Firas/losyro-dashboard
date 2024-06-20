@@ -1,7 +1,7 @@
 .sidebar {
   color: aliceblue;
   max-width: 18%;
-  min-height: calc(100vh - 2px);
+  height: calc(100vh - 2px);
   border: double 1px transparent;
   background-image: linear-gradient(rgba(15, 9, 12), rgba(15, 9, 12)),
     linear-gradient(to bottom, rgb(0, 2, 254, 1) 10%, rgb(0, 254, 252, 1) 125%);
