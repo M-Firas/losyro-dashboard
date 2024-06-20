@@ -1,8 +1,14 @@
 import "./Home.css";
+
 //assets
+
+//ChartJs Dependency
+import { Chart as ChartJS } from "chart.js/auto";
+import { Bar } from "react-chartjs-2";
 
 //components
 import CurrentSetter from "../../components/CurrentSetter/CurrentSetter";
+
 
 
 const Home = () => {
@@ -43,6 +49,49 @@ const Home = () => {
               <p>7 Month</p>
               <img src="/icons/arrowDown.svg" alt="" />
             </div>
+          </div>
+          <div className="bar--chart">
+            <Bar 
+            options= {{
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              scales: {
+                y: {
+                  beginAtZero: true, // Ensure the scale starts at 0
+                  max: 100, // Ensure the scale ends at 100
+                  ticks: {
+                    stepSize: 25, // Ensure the step size between ticks is 25
+                    callback: function(value) {
+                      return value + '%';
+                    }
+                  }
+                }
+              },
+              responsive: true,
+            }}
+            
+            data={{
+              labels: ["Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+              datasets:[
+                {
+                  data: [50,75,45,90,70,50,75],
+                  backgroundColor: [
+                    "rgba(0, 2, 255, 1)",
+                    "rgba(0, 2, 255, 1)",
+                    "rgba(0, 2, 255, 1)",
+                    'rgba(35, 193, 255, 1)',
+                    "rgba(0, 2, 255, 1)",
+                    "rgba(0, 2, 255, 1)",
+                    "rgba(0, 2, 255, 1)",
+                  ],
+                  borderRadius: 8,
+                  categoryPercentage: 0.7
+                }
+              ]
+            }} />
           </div>
         </div>
         <div className="home--bottom-right">

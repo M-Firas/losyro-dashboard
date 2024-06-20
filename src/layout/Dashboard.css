@@ -2,7 +2,17 @@
     display: flex; 
 }
 .dashboard--content{
-    flex-grow: 1;
 	width: max-content;
+    flex: 1;
+    overflow-y:auto;
+    height: 100vh;
     padding: 0 30px;
 }
+.dashboard--content::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+.dashboard--content::-webkit-scrollbar-thumb {
+    background: #140EEF;
+    border-radius: 10px;
+  }

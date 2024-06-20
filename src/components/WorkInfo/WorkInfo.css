@@ -57,10 +57,10 @@
     overflow-y: scroll;
     height: 140px;
 }
-::-webkit-scrollbar{
+.scroll--div::-webkit-scrollbar{
     width: 1px;
 }
-::-webkit-scrollbar-thumb{
+.scroll--div::-webkit-scrollbar-thumb{
     background: #140EEF;
     border-radius: 10px;
 }
