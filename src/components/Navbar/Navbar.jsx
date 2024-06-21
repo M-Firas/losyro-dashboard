@@ -8,12 +8,38 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      {/* Home Page Navbar */}
       {location.pathname === "/dashboard/home" && (
         <div className="home-navbar--container">
-            <img src={avatar} alt="" width="50px" height="50px" />
+          <img src={avatar} alt="" width="50px" height="50px" />
         </div>
       )}
 
+      {/* Current Setter Page Navbar */}
+      {location.pathname === "/dashboard/home/current-setter" && (
+        <div className="navbar--container">
+          <div className="container--left">
+            <img src="/icons/trophy.svg" alt="" />
+            <p>Current Setter</p>
+            <span>( Actual Work )</span>
+          </div>
+          <div className="container--right">
+            <button>This Setter</button>
+            <div className="setter--selection">
+              <img src="/icons/arrowLeft.svg" alt="" />
+              <div className="setter--info">
+                <p>Setter 22</p>
+                <span>12Apr-17Apr</span>
+              </div>
+              <img src="/icons/arrowRight.svg" alt="" />
+            </div>
+            <img src={avatar} alt="" width="50px" height="50px" />
+            <img src="/icons/bill.svg" width="37px" height="37px" alt="" />
+          </div>
+        </div>
+      )}
+
+      {/* Setters Page Navbar */}
       {location.pathname === "/dashboard/setters" && (
         <div className="navbar--container">
           <div className="container--left">
@@ -41,6 +67,7 @@ const Navbar = () => {
         </div>
       )}
 
+      {/* Team Page Navbar */}
       {location.pathname === "/dashboard/team" && (
         <div className="navbar--container">
           <div className="container--left">
@@ -68,6 +95,7 @@ const Navbar = () => {
         </div>
       )}
 
+      {/* Profile Page Navbar */}
       {location.pathname === "/dashboard/profile" && (
         <div className="navbar--container">
           <div className="container--left">
@@ -85,6 +113,7 @@ const Navbar = () => {
         </div>
       )}
 
+      {/* About Us Page Navbar */}
       {location.pathname === "/dashboard/aboutus" && (
         <div className="navbar--container">
           <div className="container--left">

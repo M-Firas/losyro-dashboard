@@ -25,6 +25,14 @@
   height: 24px;
   margin-right: 10px;
 }
+.navbar--container .container--left > span {
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(103.18deg, #00fefc -41.67%, #0002fe 141.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left:10px ;
+}
 .navbar--container .container--left .refreash--logo {
   width: 36px;
   height: 36px;
@@ -63,37 +71,41 @@
   flex-direction: row;
   gap: 15px;
 }
- .container--right button{
+.container--right button {
   width: 95px;
   height: 38px;
-  font-size:12px;
-  background-color: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+  font-size: 12px;
+  background-color: linear-gradient(
+    103.18deg,
+    #00fefc -41.67%,
+    #0002fe 141.58%
+  );
   margin: 0;
 }
-.container--right .setter--selection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.container--right .setter--selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-.container--right .setter--selection img{
-    cursor: pointer;
+.container--right .setter--selection img {
+  cursor: pointer;
 }
 
-.container--right .setter--selection .setter--info{
-    flex-direction: column;
-    padding: 0px 20px;
+.container--right .setter--selection .setter--info {
+  flex-direction: column;
+  padding: 0px 20px;
 }
-.container--right .setter--selection .setter--info p{
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
+.container--right .setter--selection .setter--info p {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
-.container--right .setter--selection .setter--info span{
-    color: #d9d9d9;
-   text-align: center;
-   font-size: 11px; 
-   font-weight: 400;
+.container--right .setter--selection .setter--info span {
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
 }

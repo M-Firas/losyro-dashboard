@@ -1,6 +1,6 @@
-import './CurrentSetter.css'
+import './Xpoints.css'
 
-const CurrentSetter = () => {
+const Xpoints = () => {
 
 
   return (
@@ -26,4 +26,4 @@ const CurrentSetter = () => {
   )
 }
 
-export default CurrentSetter
+export default Xpoints

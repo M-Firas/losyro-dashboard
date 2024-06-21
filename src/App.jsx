@@ -14,33 +14,33 @@ import SignUp from "./pages/AuthPages/Signup/SignUp";
 
 //pages
 import Dashboard from "./layout/Dashboard";
-import Home from './pages/Home/Home'
+import Home from "./pages/Home/Home";
 import Setters from "./pages/Settters/Setters";
 import Team from "./pages/Team/Team";
-import Profile from "./pages/Profile/Profile"
-import Aboutus from "./pages/Aboutus/Aboutus"
+import Profile from "./pages/Profile/Profile";
+import Aboutus from "./pages/Aboutus/Aboutus";
 import Settings from "./pages/Settings/Settings";
-
+import CurrentSetter from "./pages/CurrentSetter/CurrentSetter";
 
 function App() {
   return (
     <AuthProvider>
       <Routes>
-
         <Route path="/" element={<ProtectedRoutes />}>
-         <Route path="/" element={<Navigate replace to="dashboard" />} />
+          <Route path="/" element={<Navigate replace to="dashboard" />} />
 
-         <Route path="dashboard" element={<Dashboard />}>
-             <Route path="home" element={<Home />} />
-             <Route path="setters" element={<Setters />} />
-             <Route path="team" element={<Team />} />
-             <Route path="profile" element={<Profile />} />
-             <Route path="aboutus" element={<Aboutus/>} />
-             <Route path="settings" element={<Settings />} />
-         </Route>
+          <Route path="dashboard" element={<Dashboard />}>
+            <Route path="home" element={<Home />}>
+              <Route path="current-setter" element={<CurrentSetter />} />
+            </Route>
+
+            <Route path="setters" element={<Setters />} />
+            <Route path="team" element={<Team />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="aboutus" element={<Aboutus />} />
+            <Route path="settings" element={<Settings />} />
+          </Route>
         </Route>
-
-
 
         <Route path="/login" element={<Login />} />
         <Route path="/recover-password" exaxt element={<RecoverPassword />} />
