@@ -112,9 +112,11 @@ const Home = () => {
                <div className="operations--buttons">
                  <img src="/icons/refreash.svg" alt="" />
                </div>
+               <NavLink to='/dashboard/team'>
                <div className="operations--buttons">
                  <img src="/icons/proceed.svg" alt="" />
                </div>
+               </NavLink>
              </div>
            </div>
  

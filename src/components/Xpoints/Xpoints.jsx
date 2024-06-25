@@ -1,6 +1,9 @@
 import './Xpoints.css'
+// react hooks
+import { useLocation } from "react-router-dom";
 
 const Xpoints = () => {
+  const location = useLocation();
 
 
   return (
@@ -9,7 +12,9 @@ const Xpoints = () => {
          <div className="component--header">
             <div className="header--left">
               <img src="/icons/XP.svg" alt="" />
-              <p>Current Setter</p>
+              <p>Current Setter {location.pathname === "/dashboard/home/current-setter" && (
+        22
+      )}</p>
               <span> ( X Points ) </span>
             </div>
             <div className="header--right">
