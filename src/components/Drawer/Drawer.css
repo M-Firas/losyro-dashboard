@@ -1,0 +1,30 @@
+.drawer--container{
+    width: 500px;
+    height: 100vh;
+    background-color:#000000;
+    position: fixed;
+    right: -538px;
+    transition: right 0.4s ease-in-out;
+}
+.drawer--container.open{
+    right: 0;
+}
+.drawer--left{
+    width: 50px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drawer--close{
+    width: 38px;
+    height: 200px;
+    margin: 0;
+    right: 24px;
+    position: relative;
+    background: linear-gradient(360deg, #0172FD 0%, #018DFD 100%);
+    border-radius: 15px;
+}
