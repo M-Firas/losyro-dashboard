@@ -1,10 +1,15 @@
 .drawer--container{
-    width: 500px;
+    width: 550px;
     height: 100vh;
     background-color:#000000;
     position: fixed;
-    right: -538px;
+    right: -588px;
     transition: right 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Gilroy-Medium';
 }
 .drawer--container.open{
     right: 0;
@@ -27,4 +32,127 @@
     position: relative;
     background: linear-gradient(360deg, #0172FD 0%, #018DFD 100%);
     border-radius: 15px;
+    border: none;
+}
+
+.drawer--right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    padding: 50px 30px;
+}
+.right--top{
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ flex-direction: column;
+ gap: 20px;
+}
+.goal--setting{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.goal--setting .check{
+    width: 27px;
+    height: 27px;
+    background: none;
+    margin: 0;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+.goal--setting input{
+    border: 1px solid rgba(23, 185, 255, 0.5);
+    background: transparent;
+    width: 200px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 24px;
+    padding: 0;
+    color: white;
+    padding: 0 20px;
+}
+.goal--setting .category{
+    width: 160px;
+    height: 47px;
+    padding: 5px;
+    border: 1px solid rgba(23, 185, 255, 0.5);
+    background: linear-gradient(103.18deg, #00fefc -41.67%, #0002fe 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.goal--assignee{
+    color:#FFFFFF;
+}
+.goal--assignee > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.goal--assignee > div p{
+    color: rgba(255, 255, 255, 0.59);
+    font-size: 12px;
+}
+.goal--assignee > div span{
+    font-size: 14px;
+    margin-left: 20px;
+}
+.right--top textarea {
+    width: calc(100% - 60px);
+    height: 150px;
+    color: rgba(255, 255, 255, 0.59);
+    background: none;
+    padding: 20px 30px;
+    border: 1px solid rgba(23, 185, 255, 0.5);
+    border-radius: 19px;
+}
+.right--top textarea:focus{
+    outline: none;
+}
+.right--top textarea::placeholder{
+    color: rgba(255, 255, 255, 0.59);
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 12px;
+}
+.attachment{
+    width: calc(100% - 60px);
+    height: 100px;
+    color: rgba(255, 255, 255, 0.59);
+    background: none;
+    padding: 20px 30px;
+    border: 1px solid rgba(23, 185, 255, 0.5);
+    border-radius: 19px;
+    font-size: 12px;
+}
+.attachment p{
+    margin: 0;
+}
+
+.right--bottom{
+    align-self: flex-end;
+}
+.right--bottom > button{
+    width: 130px;
+    height: 43px;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-family: 'Gilroy-Medium';
+}
+.right--bottom .save--goal{
+    margin-left: 10px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+}
+.right--bottom .cancel--goal{
+    background: transparent;
 }

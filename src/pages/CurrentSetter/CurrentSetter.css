@@ -27,7 +27,7 @@
     color: #FFFFFF;
     letter-spacing: 2px;
 }
-.top--left .to-do--item{
+.top--left .todo--item{
     width: 310px;
     height: 60px;
     background: rgba(1, 141, 253, 1);
@@ -38,7 +38,7 @@
     border-radius: 8px;
     margin-bottom: 10px;
 }
-.top--left .to-do--item > button{
+.top--left .todo--item > button{
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -46,19 +46,20 @@
     border: 1px solid #FFFFFF;
     margin: 0 20px 0 0;
 }
-.top--left .to-do--item > p {
+.top--left .todo--item > p {
     font-size: 14px;
     color: #FFFFFF;
     font-family: 'Gilroy-Medium';
 }
 .top--left .add--todo{
     width: 350px;
+    height: 55px;
     background: rgba(1, 141, 253, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-
+    border: none;
 }
 .top--left .add--todo > div{
     width: 36px;
@@ -69,6 +70,31 @@
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 
+}
+.top--middle .completed--todo{
+    width: 310px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(217, 217, 217, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.completed--todo > button{
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+.completed--todo p {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Gilroy-Medium';
 }
 .top--right{
     width: 20%;
@@ -93,9 +119,9 @@
     color:rgba(255, 255, 255, 1);
     font-weight: 500;
 }
-.top--right
+
 /* scrolling functionality */
-.scroll-div{
+ .scroll-div{
    height: 250px;
    overflow-y: auto;
 }
@@ -107,3 +133,5 @@
     background: transparent;
     border-radius: 10px;
   }
+
+

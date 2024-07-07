@@ -5,11 +5,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
+//Todos Provider 
+import { TodosProvider } from './utils/TodosContext';
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
+      <TodosProvider>
       <App />
+      </TodosProvider>
     </React.StrictMode>
   </BrowserRouter>
 );

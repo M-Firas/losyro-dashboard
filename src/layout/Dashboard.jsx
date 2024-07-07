@@ -1,17 +1,15 @@
 import "./Dashboard.css";
-
-//react hookss
 import { Outlet, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-
-//components
+import { useState, useEffect, useContext } from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
 import Drawer from "../components/Drawer/Drawer";
+import { TodosContext } from "../utils/TodosContext";
 
 const Dashboard = () => {
   const location = useLocation();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const { addTodo } = useContext(TodosContext);
 
   // Update drawer state when location changes
   useEffect(() => {
@@ -33,7 +31,11 @@ const Dashboard = () => {
         <Navbar />
         <Outlet context={{ openDrawer }} />
       </div>
-      <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />
+      <Drawer 
+        isOpen={isDrawerOpen} 
+        onClose={closeDrawer}
+        addTodo={addTodo}
+      />
     </div>
   );
 };

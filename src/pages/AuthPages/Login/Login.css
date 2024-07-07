@@ -52,7 +52,7 @@
   input:focus {
     outline: none;
   }
-  ::placeholder {
+  input::placeholder {
     color: #ffffff;
     font-family: "Gilroy-Light", sans-serif;
     font-size: 20px;
@@ -94,7 +94,7 @@
     font-family: "Gilroy-Light", sans-serif;
   }
   
-  button {
+ .login--page button {
     width: 400px;
     height: 60px;
     margin-top: 20px;

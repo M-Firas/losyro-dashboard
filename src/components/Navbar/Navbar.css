@@ -75,12 +75,15 @@
   width: 95px;
   height: 38px;
   font-size: 12px;
-  background-color: linear-gradient(
+  background: linear-gradient(
     103.18deg,
     #00fefc -41.67%,
     #0002fe 141.58%
   );
   margin: 0;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
 }
 .container--right .setter--selection {
   display: flex;

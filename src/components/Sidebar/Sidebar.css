@@ -81,6 +81,7 @@
   width: 180px;
   height: 50px;
   border: 1px solid #ffffff;
+  border-radius: 12px;
 }
 .ask--me p {
   padding-right: 10px;
@@ -141,6 +142,9 @@
     margin-top: 0; 
     border-radius: 12px;
     font-size: 15px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    color: #ffffff;
+    border: none;
 }
 .user--bottom button img{
     margin-right: 5px;
