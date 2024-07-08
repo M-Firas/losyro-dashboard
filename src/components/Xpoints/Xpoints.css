@@ -6,3 +6,41 @@
     background: linear-gradient(180deg, rgba(46, 167, 255, 0) 57.41%, rgba(46, 167, 255, 0.1) 100%);
     border-radius: 16px;
 }
+
+.xpoints--item, .xpoints--completed{
+    width: 270px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(23, 185, 255, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.xpoints--item > button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid rgba(23, 185, 255, 0.5);
+    margin: 0 20px 0 0;
+}
+.xpoints--item > p {
+    color: #ffffff;
+}
+.xpoints--completed > button{
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 0;
+    width: 16px;
+    height: 16px;
+}
+.xpoints--completed > p{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: line-through;
+}

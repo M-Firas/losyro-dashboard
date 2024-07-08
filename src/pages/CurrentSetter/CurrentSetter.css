@@ -75,7 +75,7 @@
     width: 310px;
     height: 50px;
     background: transparent;
-    border: 1px solid rgba(217, 217, 217, 1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -93,7 +93,7 @@
 }
 .completed--todo p {
     font-size: 14px;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
     font-family: 'Gilroy-Medium';
 }
 .top--right{
