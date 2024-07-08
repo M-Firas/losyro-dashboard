@@ -69,3 +69,17 @@ code {
   height: 16px;
   margin: 0;
 }
+
+/* Scrolling in Divs  */
+.scroll-div{
+  height: 250px;
+  overflow-y: auto;
+}
+.scroll-div::-webkit-scrollbar {
+   width: 1px;
+ }
+ 
+ .scroll-div::-webkit-scrollbar-thumb {
+   background: transparent;
+   border-radius: 10px;
+ }

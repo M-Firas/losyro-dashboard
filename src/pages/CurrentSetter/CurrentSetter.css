@@ -60,6 +60,7 @@
     align-items: center;
     border-radius: 8px;
     border: none;
+    margin-top: 10px;
 }
 .top--left .add--todo > div{
     width: 36px;
@@ -120,18 +121,5 @@
     font-weight: 500;
 }
 
-/* scrolling functionality */
- .scroll-div{
-   height: 250px;
-   overflow-y: auto;
-}
-.scroll-div::-webkit-scrollbar {
-    width: 1px;
-  }
-  
-  .scroll-div::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 10px;
-  }
 
 

@@ -2,6 +2,7 @@ import "./Xpoints.css";
 
 // react hooks
 import { useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 
 // Todo Context
@@ -25,9 +26,11 @@ const Xpoints = () => {
           <span> ( X Points ) </span>
         </div>
         <div className="header--right">
-          <div className="operations--buttons">
-            <img src="/icons/proceed.svg" alt="" />
-          </div>
+          <NavLink to="current-setter">
+            <div className="operations--buttons">
+              <img src="/icons/proceed.svg" alt="" />
+            </div>
+          </NavLink>
         </div>
       </div>
 
