@@ -2,6 +2,8 @@ import "./Navbar.css";
 import { useLocation } from "react-router-dom";
 //assets
 import avatar from "../../images/avatar.png";
+//components
+import Notifications from "../Notifications/Notifications";
 
 const Navbar = () => {
   const location = useLocation();
@@ -34,7 +36,7 @@ const Navbar = () => {
               <img src="/icons/arrowRight.svg" alt="" />
             </div>
             <img src={avatar} alt="" width="50px" height="50px" />
-            <img src="/icons/bill.svg" width="37px" height="37px" alt="" />
+            <Notifications />
           </div>
         </div>
       )}
@@ -62,7 +64,7 @@ const Navbar = () => {
               <img src="/icons/arrowRight.svg" alt="" />
             </div>
             <img src={avatar} alt="" width="50px" height="50px" />
-            <img src="/icons/bill.svg" width="37px" height="37px" alt="" />
+            <Notifications />
           </div>
         </div>
       )}
@@ -90,7 +92,7 @@ const Navbar = () => {
               <img src="/icons/arrowRight.svg" alt="" />
             </div>
             <img src={avatar} alt="" width="50px" height="50px" />
-            <img src="/icons/bill.svg" width="37px" height="37px" alt="" />
+            <Notifications />
           </div>
         </div>
       )}
@@ -108,7 +110,7 @@ const Navbar = () => {
           </div>
           <div className="container--right">
             <img src={avatar} alt="" width="50px" height="50px" />
-            <img src="/icons/bill.svg" width="37px" height="37px" alt="" />
+            <Notifications />
           </div>
         </div>
       )}
@@ -126,7 +128,7 @@ const Navbar = () => {
           </div>
           <div className="container--right">
             <img src={avatar} alt="" width="50px" height="50px" />
-            <img src="/icons/bill.svg" width="37px" height="37px" alt="" />
+            <Notifications />
           </div>
         </div>
       )}
