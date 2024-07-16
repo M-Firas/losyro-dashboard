@@ -3,13 +3,14 @@ import  { useContext } from "react";
 import { useOutletContext } from "react-router-dom";
 
 // assets
-import chart from "../../images/chart.svg";
+
 
 // Todo Context
 import { TodosContext } from "../../utils/TodosContext";
 
 // components
 import Xpoints from "../../components/Xpoints/Xpoints";
+import Circular from "../../components/Circular/Circular";
 
 const CurrentSetter = () => {
   const { openDrawer } = useOutletContext();
@@ -63,7 +64,9 @@ const CurrentSetter = () => {
         </div>
         <div className="top--right">
           <div className="setter--percentage">
-            <img src={chart} alt="" />
+            <Circular
+            actualWorkTodos={actualWorkTodos} 
+            completedActualWorkTodos={completedActualWorkTodos}  />
             <p>Setter Percentage</p>
           </div>
           <h4>Pending: {actualWorkTodos.length}</h4>

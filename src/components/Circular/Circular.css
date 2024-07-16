@@ -1,0 +1,47 @@
+
+.circular--container{
+    width: 177px;
+    height: 177px;
+    position: relative;
+}
+
+.circular--container .outer{
+    width: 177px;
+    height: 177px;
+    background: rgba(27, 31, 46, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.circular--container .inner{
+    width: 109px;
+    height: 109px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.circular--container .inner p{
+    color: #FFFFFF;
+    font-size: 29.89px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#progress {
+    position: absolute;
+    top: -6px;
+    left: -7px;
+    transform: rotate(-80deg);
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 35px;
+    transition: stroke-dashoffset 0.5s ease;
+}

@@ -49,7 +49,10 @@
 .actualwork--info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+.actualwork--right{
+  padding-top: 30px;
 }
 .todo--list , .add--todo-home{
   display: flex;

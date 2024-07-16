@@ -19,11 +19,12 @@ import { TodosContext } from "../../utils/TodosContext";
 //components
 import Xpoints from "../../components/Xpoints/Xpoints";
 import CurrentSetter from "../CurrentSetter/CurrentSetter";
+import Circular from "../../components/Circular/Circular";
 
 const Home = () => {
   const location = useLocation();
 
-  const { actualWorkTodos } = useContext(TodosContext);
+  const { actualWorkTodos,completedActualWorkTodos } = useContext(TodosContext);
 
   return (
     <div className="home">
@@ -72,7 +73,9 @@ const Home = () => {
                 </div>
                 <div className="actualwork--right">
                   <div className="setter--percentage">
-                    <img src={chart} alt="" />
+                  <Circular
+            actualWorkTodos={actualWorkTodos} 
+            completedActualWorkTodos={completedActualWorkTodos}  />
                     <p>Setter Percentage</p>
                   </div>
                 </div>
