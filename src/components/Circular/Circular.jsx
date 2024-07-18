@@ -29,11 +29,11 @@ const Circular = ({ actualWorkTodos, completedActualWorkTodos }) => {
     >
       <defs>
         <linearGradient id="GradientColor">
-          <stop offset="0.519418" stopColor="#0F55E8" />
-          <stop offset="0.759246" stopColor="#6DCFFA" />
+          <stop offset="0.209418" stopColor="#6DCFFA" />
+          <stop offset="0.759246" stopColor="#0F55E8" /> 
         </linearGradient>
       </defs>
-      <circle
+      <circle 
         cx="95"
         cy="95"
         r={radius}
