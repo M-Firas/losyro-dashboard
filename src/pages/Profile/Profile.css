@@ -55,6 +55,9 @@
     width: 90%;
     color: #FFFFFF;
 }
+.profile--container input:focus{
+    border-color: rgba(23, 185, 255, 0.5);
+}
 .profile--container label{
     color:  rgba(255, 255, 255, 1);
     font-size: 15px;
@@ -105,7 +108,9 @@
     padding: 10px 5px;
     color: #FFFFFF;
 }
-
+.middle--right textarea:focus{
+    border: 1px solid rgba(23, 185, 255, 0.5);
+}
 
 .profile--bottom .bottom--left{
     display: flex;
