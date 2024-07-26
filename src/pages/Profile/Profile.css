@@ -1,3 +1,137 @@
 .profile--container{
+  width: calc(99% - 60px);
+  padding: 30px;
+  border: 1px solid rgba(23, 185, 255, 0.5);
+  border-radius: 20px;
+  font-family: "Gilroy-Light";
+}
+.profile--top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile--top > img {
+    margin-bottom: 10px;
+}
+.profile--top > button{
+    border: none;
+    background-color: transparent;
+    color: rgba(35, 193, 255, 1);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Gilroy-Light";
+}
+
+.profile--middle,.profile--bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.profile--container > h1 {
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 30px 0;
+}
+.profile--middle .middle--left, .middle--right{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 250px;
+}
+.profile--container input{
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    padding: 15px 5px;
+    width: 90%;
     color: #FFFFFF;
+}
+.profile--container label{
+    color:  rgba(255, 255, 255, 1);
+    font-size: 15px;
+}
+
+.middle--right .agancy-select--container{
+    width: 100%;
+    position: relative;
+}
+.agancy-select--container .select--btn {
+    padding: 13px 20px;
+    background-color: #000000;
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.agancy-select--container .select--content{
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    width: 100%;
+    position: absolute;
+    z-index: 70;
+    color: #ffffff;
+    box-shadow: 0px 20px 32px 0px rgba(35,193,255,0.22);
+    -webkit-box-shadow: 0px 20px 32px 0px rgba(35,193,255,0.22);
+    -moz-box-shadow: 0px 20px 32px 0px rgba(35,193,255,0.22);
+}
+.agancy-select--container .select--item{
+    padding: 20px 10px;
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.middle--right textarea{
+    height: 100px;
+    width: 97%;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    padding: 10px 5px;
+    color: #FFFFFF;
+}
+
+
+.profile--bottom .bottom--left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.profile--bottom .bottom--right{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-top: 77px;
+}
+.bottom--right button{
+    width: 130px;
+    height: 43px;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-family: 'Gilroy-Medium';
+}
+.bottom--right button:nth-child(2){
+    margin-left: 10px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+}
+.bottom--right button:nth-child(1){
+    background: transparent;
 }
