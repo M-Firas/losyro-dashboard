@@ -5,10 +5,12 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
 import Drawer from "../components/Drawer/Drawer";
 import { TodosContext } from "../utils/TodosContext";
+import QuestionPopup from "../components/QuestionPopup/QuestionPopup";
 
 const Dashboard = () => {
   const location = useLocation();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const { addTodo } = useContext(TodosContext);
 
   // Update drawer state when location changes
@@ -24,9 +26,18 @@ const Dashboard = () => {
     setIsDrawerOpen(false);
   };
 
+ // handling opening and closing the popup
+  const OpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const ClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div className="dashboard--container">
-      <Sidebar />
+      <Sidebar onAskQuestion={OpenPopup}/>
       <div className="dashboard--content">
         <Navbar />
         <Outlet context={{ openDrawer }} />
@@ -36,6 +47,7 @@ const Dashboard = () => {
         onClose={closeDrawer}
         addTodo={addTodo}
       />
+      <QuestionPopup isOpen={isPopupOpen} onClose={ClosePopup}/>
     </div>
   );
 };

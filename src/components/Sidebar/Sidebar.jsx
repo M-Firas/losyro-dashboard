@@ -9,7 +9,7 @@ import { useAuth } from '../../utils/auth'
 
 
 
-const Sidebar = () => {
+const Sidebar = ({ onAskQuestion }) => {
   const auth = useAuth();
   const navigate = useNavigate();
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
         </div>
 
         <div className="sidebar--bottom">
-          <button className="ask--me"><img src='/icons/qmark.svg' alt="" /><p>Ask A Question</p></button>
+          <button className="ask--me" onClick={onAskQuestion}><img src='/icons/qmark.svg' alt="" /><p>Ask A Question</p></button>
           <div className="user--info">
             <div className="user--top">
                 <img src={avatar} alt="" />
