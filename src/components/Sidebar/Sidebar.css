@@ -143,6 +143,7 @@
     border-radius: 12px;
     font-size: 15px;
     background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    box-shadow: 0px 4px 24px 0px rgba(168, 82, 5, 0.3);
     color: #ffffff;
     border: none;
 }
