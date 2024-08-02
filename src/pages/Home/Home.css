@@ -146,6 +146,7 @@
   font-family: "Gilroy-Light";
   border-bottom: 1px solid rgba(255, 255, 255, 0.30);
   padding: 5px;
+  text-decoration: none;
 }
 .team--member:last-child {
   border-bottom: none;
@@ -214,4 +215,11 @@
 }
 .agency-white {
   color: rgba(255, 255, 255, 1);
+}
+
+
+
+.navlink{
+  color: inherit;
+  text-decoration: none;
 }

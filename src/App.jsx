@@ -21,6 +21,7 @@ import Profile from "./pages/Profile/Profile";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import Settings from "./pages/Settings/Settings";
 import CurrentSetter from "./pages/CurrentSetter/CurrentSetter";
+import TeammateSetter from "./pages/TeammateSetter/TeammateSetter";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="profile" element={<Profile />} />
             <Route path="aboutus" element={<Aboutus />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="teammate" element={<TeammateSetter />} />
           </Route>
         </Route>
 

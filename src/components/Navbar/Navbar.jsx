@@ -132,6 +132,20 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
+      {/* Teammate Setter Page Navbar */}
+      {location.pathname === "/dashboard/teammate" && (
+        <div className="navbar--container">
+          <div className="container--left">
+            <img src="/icons/trophy.svg" alt="" />
+            <p>Obada Rudainy</p>
+            <span>( Setter 22 )</span>
+          </div>
+          <div className="container--right">
+            <img src={avatar} alt="" width="50px" height="50px" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import './Team.css'
+import { NavLink } from 'react-router-dom';
 
 //Team Data
 import { teamData } from "../../data/teamData"; 
@@ -37,6 +38,7 @@ const Team = () => {
 
                 return (
                   <div className="team--member" key={index}>
+                    <NavLink className='navlink' to="/dashboard/teammate">
                      <div className="team--member-left">
                       <div className="rank">
                         <img src={data.rank} alt="" />
@@ -53,6 +55,7 @@ const Team = () => {
                        </div>
                       </div>
                     </div>
+                    </NavLink>
                     <div className="team--member-right">
                       <p className={percentageClass}>{data.percentage}</p>
                     </div>

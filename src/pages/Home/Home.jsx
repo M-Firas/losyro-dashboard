@@ -181,11 +181,13 @@ const Home = () => {
                 }
 
                 return (
-                  <div className="team--member" key={index}>
+                  
+                    <div className="team--member" key={index}>
                     <div className="team--member-left">
                       <div className="rank">
                         <img src={data.rank} alt="" />
                       </div>
+                      <NavLink className='navlink' to="/dashboard/teammate">
                       <div className="team--member-info">
                         <div className="avatar">
                           <img src={data.avatar} alt="" />
@@ -195,11 +197,13 @@ const Home = () => {
                           <span className={agencyClass}>{data.agancy}</span>
                         </div>
                       </div>
+                      </NavLink>
                     </div>
                     <div className="team--member-right">
                       <p className={percentageClass}>{data.percentage}</p>
                     </div>
                   </div>
+                  
                 );
               })}
             </div>
