@@ -123,7 +123,7 @@
   border-radius: 16px;
 }
 /* START OF BOTTOM LEFT SECTION */
-.bottom--left{
+.teammateSetter--bottom .bottom--left{
     width: 52%;
     border-right: 1px solid rgba(23, 185, 255, 0.5);
     padding: 20px 27px 20px 27px;
@@ -132,10 +132,10 @@
     align-items: center;
     flex-direction: column;
 }
-.bottom--left .scroll-div{
+.teammateSetter--bottom  .bottom--left .scroll-div{
     width: 100%;
 }
-.bottom--left .todo--item,.completedTodo--item{
+.teammateSetter--bottom  .bottom--left .todo--item,.completedTodo--item{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -146,7 +146,7 @@
   padding: 0 20px;
   margin-bottom: 12px;
 }
-.bottom--left .todo--item > button{
+.teammateSetter--bottom  .bottom--left .todo--item > button{
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -154,13 +154,13 @@
     border: 1px solid rgba(23, 185, 255, 0.5);
     margin: 0 20px 0 0;
 }
-.bottom--left .completedTodo--item{
+.teammateSetter--bottom  .bottom--left .completedTodo--item{
     background: rgba(0, 0, 0, 0.5);
     border:1px solid rgba(217, 217, 217, 1);
     opacity: 0.5;
     width: 92%;
 }
-.bottom--left .completedTodo--item > button{
+.teammateSetter--bottom  .bottom--left .completedTodo--item > button{
     background: transparent;
     border: none;
     display: flex;
@@ -173,7 +173,7 @@
 /* END OF BOTTOM LEFT SECTION */
 
 /* START OF BOTTOM RIGHT SECTION */
-.bottom--right{
+.teammateSetter--bottom  .bottom--right{
     padding: 20px 27px 20px 27px;
     width: 37%;
     display: flex;
@@ -181,10 +181,10 @@
     align-items: center;
     flex-direction: column;
 }
-.bottom--right .scroll-div{
+.teammateSetter--bottom  .bottom--right .scroll-div{
     width: 100%;
 }
-.bottom--right .todo--item,.completedTodo--item{
+.teammateSetter--bottom  .bottom--right .todo--item,.completedTodo--item{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -195,7 +195,7 @@
     padding: 0 20px;
     margin-bottom: 12px;
 }
-.bottom--right .todo--item > button{
+.teammateSetter--bottom  .bottom--right .todo--item > button{
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -203,12 +203,12 @@
     border: 1px solid rgba(23, 185, 255, 0.5);
     margin: 0 20px 0 0;
 }
-.bottom--right .completedTodo--item{
+.teammateSetter--bottom  .bottom--right .completedTodo--item{
     background: rgba(0, 0, 0, 0.5);
     border:1px solid rgba(217, 217, 217, 1);
     opacity: 0.5;
 }
-.bottom--right .completedTodo--item > button{
+.teammateSetter--bottom  .bottom--right .completedTodo--item > button{
     background: transparent;
     border: none;
     display: flex;
