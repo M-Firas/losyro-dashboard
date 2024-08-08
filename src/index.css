@@ -83,3 +83,38 @@ code {
    background: transparent;
    border-radius: 10px;
  }
+
+/* Component's Header Styling */
+.component--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.component--header .header--left,
+.header--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component--header .header--left {
+  gap: 7px;
+}
+.component--header .header--left > p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.component--header .header--left > span {
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(103.18deg, #00fefc -41.67%, #0002fe 141.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.component--header .header--right > p {
+  color: rgba(35, 193, 255, 1);
+  font-size: 12px;
+  font-weight: 500;
+}
+/* Component's Header Styling */

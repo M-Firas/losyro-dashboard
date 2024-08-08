@@ -2,7 +2,7 @@ import "./Login.css";
 //hooks
 import { useState } from "react";
 import { NavLink,useNavigate } from "react-router-dom";
-import { useAuth } from "../../../utils/auth";
+import { useAuth } from "../../../utils/AuthContext";
 //assets
 import backgroundImage from "../../../images/Group 1000001645.png";
 import logo from "../../../images/losyro-icon.svg";

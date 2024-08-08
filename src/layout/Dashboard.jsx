@@ -40,7 +40,9 @@ const Dashboard = () => {
       <Sidebar onAskQuestion={OpenPopup}/>
       <div className="dashboard--content">
         <Navbar />
+        <div className="dashboard--outlet">
         <Outlet context={{ openDrawer }} />
+        </div>
       </div>
       <Drawer 
         isOpen={isDrawerOpen} 

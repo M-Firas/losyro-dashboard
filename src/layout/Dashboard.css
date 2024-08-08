@@ -4,15 +4,17 @@
 .dashboard--content{
 	width: max-content;
     flex: 1;
-    overflow-y:auto;
-    height: 100vh;
-    padding: 0 30px;
 }
-.dashboard--content::-webkit-scrollbar {
+.dashboard--outlet{
+  overflow-y:auto;
+  height: 87vh;
+  padding: 0 30px;
+}
+.dashboard--outlet::-webkit-scrollbar {
     width: 1px;
   }
   
-.dashboard--content::-webkit-scrollbar-thumb {
+.dashboard--outlet::-webkit-scrollbar-thumb {
     background: #140EEF;
     border-radius: 10px;
   }

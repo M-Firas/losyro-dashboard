@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 //AuthProvider and Protected Routes
-import { AuthProvider } from "./utils/auth";
+import { AuthProvider } from "./utils/AuthContext";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 
 //auth pages
